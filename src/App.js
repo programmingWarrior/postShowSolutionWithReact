@@ -9,6 +9,7 @@ import {
 import Posts from './components/Posts/Posts';
 import NoMatch from './components/NoMatch/NoMatch';
 import PostDetails from './components/PostDetails/PostDetails';
+import CommentDetails from './components/CommentDetails/CommentDetails';
 
 
 function App() {
@@ -23,9 +24,12 @@ function App() {
           <Posts></Posts>
         </Route>
 
-        <Route path={`/posts/:id`}>
-            <PostDetails></PostDetails>
+        <Route path={`/posts/:postId`}>
+            <PostDetails></PostDetails> 
         </Route>
+
+        
+        
 
         <Route path="*">
           <NoMatch></NoMatch>
